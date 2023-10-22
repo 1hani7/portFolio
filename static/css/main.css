@@ -31,4 +31,21 @@ html{
 
 .wrap{
     width:100%;
+    padding-left:68px;
+}
+
+::-webkit-scrollbar{
+    width:15px;
+    background:transparent;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track{
+    width:0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#f5f5f5;
+    border-radius: 30px;
 }

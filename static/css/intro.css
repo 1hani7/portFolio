@@ -1,5 +1,5 @@
 .introWrap{
-    height:250vh;
+    height:480vh;
 }
 
 .intro{
@@ -22,13 +22,15 @@
     width:100%;
     display: flex;
     row-gap:-100px;
+    transform: translateY(100%);
+    opacity: 0;
 }
 .introLogoWrap img{
     width:100%;
 }
 
 .introLine{
-    width:100%; height:2px;
+    width:0px; height:2px;
     background:white;
     margin-top:5px;
 }
@@ -48,7 +50,19 @@
 
 .titleWord{
     color:white; font-weight:900;
+    overflow:hidden;
     text-align: center;
+    line-height:50px;
+    /* border-right:5px solid white; */
+    /* animation: typing 0.5s infinite; */
+}
+@keyframes typing{
+    from{
+        border-right:5px solid white;
+    }
+    to{
+        border-right: transparent;
+    }
 }
 
 .titleChev{
@@ -65,7 +79,10 @@
 
 .introSlogun{
     color:white;
+    text-align: center;
     font-size:var(--normalFont);
+    transform:translateY(100%);
+    opacity: 0;
 }
 .linAniWrap{
     position:absolute;
@@ -88,10 +105,15 @@
     margin-top:50px;
     width:100%;
     color:white; display:flex;
-    justify-content: center;
-    column-gap: 20px;;
+    justify-content: space-between;
+    column-gap: 0px;
 }
 
+.hashTagS{
+    width:fit-content; text-align: center;
+    transform:translateY(100%);
+    opacity: 0;
+}
 
 
 
@@ -102,16 +124,21 @@
     overflow:hidden;
     display:flex;
     justify-content: space-between;
+    z-index:-1;
 }
 .introCoverWrapper img{
     position:relative;
     width:50%; height:100vh;
 }
 
-.leftCover{
-    /* transform:translateX(0); */
+
+/*등장 클래스*/
+.introEntrance{
+    transform: translate(0);
+    transform: translateY(0);
+    opacity: 1;
+    width:100%;
+    transition: all 1s ease-out;
 }
 
-.rightCover{
-    /* transform:translateX(0); */
-}
+

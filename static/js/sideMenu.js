@@ -1,11 +1,15 @@
 let isSideOpen = false;
+let isSideAnimating = false;
 
 function sideMenuToggle(){
-    const sideMenu = document.querySelector(".sideMenu");
-    
+    if( isSideAnimating ) return;
 
+    isSideAnimating = true;
+
+    const sideMenu = document.querySelector(".sideMenu");
     const menu = document.querySelectorAll(".menu");
     if( !isSideOpen ){
+        isSideOpen = true;
         sideMenu.classList.toggle("menuOn");
         sideMenu.classList.toggle("menuOff");
         setTimeout(function(){
@@ -15,9 +19,10 @@ function sideMenuToggle(){
                     val.classList.add("menuShow");
                 }, idx * 100);
             })
+            isSideAnimating = false;
         },400);
-        isSideOpen = true;
     }else{
+        isSideOpen = false;
         menu.forEach((val, idx)=>{
             setTimeout(()=>{
                 val.classList.remove("menuShow");
@@ -27,7 +32,7 @@ function sideMenuToggle(){
         setTimeout(()=>{
             sideMenu.classList.toggle("menuOn");
             sideMenu.classList.toggle("menuOff");
+            isSideAnimating = false;
         }, 1000)
-        isSideOpen = false;
     }
 }
