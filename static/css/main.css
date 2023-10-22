@@ -20,3 +20,8 @@ a{text-decoration: none;}
     --titleFont: 40px;
     --semiTitleFont: 35px;
 }
+
+html{
+    background:var(--bgColor);
+    font-family: 'Noto Sans', sans-serif;
+}
