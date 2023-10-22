@@ -1,13 +1,14 @@
 .particleBg{
     position:fixed; top:0; left:0;
     width:100%; height:100vh;
-    background:radial-gradient(ellipse at bottom, #303030 0%, var(--bgColor) 100%);
+    /* background:radial-gradient(ellipse at bottom, #303030 0%, var(--bgColor) 100%); */
+    background: var(--bgColor);
     z-index:-1;
 }
 
 .particleBg > *{
     border:none; border-radius: 50%;
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 #stars{

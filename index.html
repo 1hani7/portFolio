@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSS'sPortFolio</title>
 
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -19,6 +22,7 @@
     <!--JavaScript-->
     <script src="./static/js/onload.js"></script>
     <script src="./static/js/sideMenu.js"></script>
+    <script src="./static/js/intro.js"></script>
 
     <!--EmailJS-->
     <script src="./static/js/email.js"></script>
@@ -54,10 +58,53 @@
     </div>
 
 
-    <div class="darkWrap">
-        <section class="intro">
-            
-        </section>
+    <!--Content-->
+    <div class="wrap">
+
+        <!--intro-->
+        <div class="introWrap">
+            <section class="intro">
+                <div class="introTitleWrap">
+                    <div>
+                        <div class="introLogoWrap">
+                            <img src="./static/image/SSSLogoWhite.svg" alt="">
+                        </div>
+                        <div class="introLine"></div>
+                    </div>
+                    <div class="titleWordWrap">
+                        <img class="titleChev" src="./static/image/chevLeft.svg">
+                        <div class="titleWordBox">
+                            <span class="titleWord">"웹이라는 캔버스에 노력이라는 선을"</span>
+                            <span class="titleWord">"그리고 매순간에 최선을"</span>
+                        </div>
+                        <img class="titleChev" src="./static/image/chevRight.svg">
+                    </div>
+                    <div class="introSlogun">
+                        언제나 전진하는 주니어 개발자,
+                        <span style="position:relative; font-weight:900; font-size:24px;">
+                            <svg class="linAniWrap" width="142" height="69" viewBox="0 0 142 69" xmlns="http://www.w3.org/2000/svg">
+                                <path class="lineAni" d="M0.428793 65.7085C6.92469 64.0885 119.212 70.0351 137.452 30.755C152.732 -2.14979 98.0584 -1.07598 72.7721 7.56929C49.5778 15.4994 -43.2736 54.8449 109.198 66.9284" stroke="white" stroke-width="3" fill="transparent" />
+                            </svg>
+                            신상수
+                        </span>
+                        입니다.
+                    </div>
+                    <div class="introCoverWrap">
+                        <div>#노력</div>
+                        <div>#열정</div>
+                        <div>#공부</div>
+                        <div>#코딩은훌륭하다</div>
+                    </div>
+                </div>
+                <div class="introCoverWrapper">
+                    <img class="leftCover" src="./static/image/introCoverLeft.png">
+                    <img class="rightCover" src="./static/image/introCoverRight.png">
+                </div>
+            </section>
+        </div>
+        
+        
+        <!--particleBG-->
         <div class="particleBg">
             <div id="stars"></div>
             <div id="stars2"></div>
