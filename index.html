@@ -8,8 +8,12 @@
     <title>Document</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/sideMenu.css">
 
     <!--JavaScript-->
+    <script src="./static/js/onload.js"></script>
+    <script src="./static/js/sideMenu.js"></script>
 
     <!--EmailJS-->
     <script src="./static/js/email.js"></script>
@@ -19,11 +23,31 @@
             emailjs.init("service_nkwhz8w");
         })();
     </script>
-
 </head>
 
 <body>
-    
+
+    <!--사이드 메뉴-->
+    <div class="sideMenu menuOff">
+        <div class="menuBtBox">
+            <div class="menuOpenBt">
+                <img onclick="sideMenuToggle()" src="./static/image/listBt.svg" alt="">
+            </div>
+            <div class="menuLogoBox">
+                <img src="./static/image/SSSLogo.svg" alt="">
+            </div>
+        </div>
+        <div class="menuBox">
+            <div class="menuWrap">
+                <div class="menu">START<div class="menuFill"></div></div>
+                <div class="menu">INTRODUCE<div class="menuFill"></div></div>
+                <div class="menu">TECHNIQUE<div class="menuFill"></div></div>
+                <div class="menu">EXPERIENCE<div class="menuFill"></div></div>
+                <div class="menu">CONTACT<div class="menuFill"></div></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
