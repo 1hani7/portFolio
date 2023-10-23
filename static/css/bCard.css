@@ -1,6 +1,6 @@
 .bCardWrap {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     /* background: var(--bgColor); */
     display: flex;
     justify-content: center;

@@ -36,6 +36,7 @@ function clickAnimation(){
 // 사이드메뉴 버튼 스크롤
 function btScroll(event){
     const bCardWrap = document.querySelector('.bCardWrap');
+    const cubeWrap = document.querySelector('.cubeWrap');
     const t = event.target.parentNode.textContent;
     if( t == 'START' ){
         window.scrollTo({
@@ -44,7 +45,12 @@ function btScroll(event){
         })
     }else if( t == 'INTRODUCE' ){
         window.scrollTo({
-            top:bCardWrap.offsetTop,
+            top:bCardWrap.offsetTop+500,
+            behavior: 'smooth'
+        })
+    }else if( t == 'TECHNIQUE' ){
+        window.scrollTo({
+            top:cubeWrap.offsetTop,
             behavior: 'smooth'
         })
     }
