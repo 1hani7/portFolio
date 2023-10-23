@@ -6,6 +6,7 @@ window.onload=function(){
     window.addEventListener('mousemove', customCursor);
     window.addEventListener('mousedown', clickAnimation);
     window.addEventListener('scroll', businessCardIn);
+    window.addEventListener('scroll', bgChange);
 }
 
 
@@ -37,6 +38,7 @@ function clickAnimation(){
 function btScroll(event){
     const bCardWrap = document.querySelector('.bCardWrap');
     const cubeWrap = document.querySelector('.cubeWrap');
+    const experienceWrap = document.querySelector('.experienceWrap');
     const t = event.target.parentNode.textContent;
     if( t == 'START' ){
         window.scrollTo({
@@ -51,6 +53,11 @@ function btScroll(event){
     }else if( t == 'TECHNIQUE' ){
         window.scrollTo({
             top:cubeWrap.offsetTop,
+            behavior: 'smooth'
+        })
+    }else if( t == 'EXPERIENCE' ){
+        window.scrollTo({
+            top:experienceWrap.offsetTop,
             behavior: 'smooth'
         })
     }

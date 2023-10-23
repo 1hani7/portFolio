@@ -1,0 +1,93 @@
+.experienceWrap{
+    width:100%; height:100vh;
+    overflow:hidden;
+    overflow-x: scroll;
+    display:flex; align-items: center;
+}
+
+.scrollZone{
+    position: absolute;
+    width:1000px; height:fit-content;
+    margin-left:40px;
+    display:flex; justify-content: space-between;
+    color:#393939;
+}
+
+.leftZone{
+    width:55%;
+}
+.leftZone .titleBox{
+    position: relative;
+    display:flex; justify-content: space-between;
+    /* border:1px solid black; */
+}
+.leftZone .titleBox > div:first-child{
+    display:flex; align-items: center;
+}
+.leftZone .titleBox > div:first-child > span{
+    font-size:100px; font-weight:bolder;
+    color: #d9d9d9; position:absolute;
+    top:-30px; left:-30px;
+}
+.leftZone .titleBox > div:first-child > div{
+    padding-left:90px; font-size:150%;
+    font-weight:bolder; flex-grow:1;
+}
+.leftZone .titleBox > div:last-child{
+    justify-self: right; align-self: end;
+    color: #979797; font-size:20%;
+}
+.leftZone .imageBox{
+    width:100%; height:fit-content;
+    /* border:1px solid black; */
+}
+.leftZone .imageBox img{
+    width:100%; border-radius: 20px;
+}
+
+
+.middleZone{
+    width:30%; padding:30px 20px 0px 20px;
+    color:#393939;
+    display:flex; flex-direction: column;
+    align-items: end; position: relative;
+}
+.middleZone .midTitle{
+    font-size:18px; font-weight:bolder;
+    text-align: center; margin-bottom:46.25px;
+}
+.middleZone .midInfo{
+    width:100%;
+    margin: 15px 0;
+}
+.middleZone .midInfo > div:first-child{
+    width:100%;
+    font-size:18px; font-weight:900;
+    border-bottom:1px solid black;
+    padding: 5px 0px 5px 20px;
+    margin-bottom:5px;
+}
+.middleZone .midInfo > div:last-child{
+    text-align: right;
+}
+
+.middleZone > button{
+    font-size:16px; font-weight:600;
+    color:white; background: var(--bgColor);
+    border-radius: 30px; border: none;
+    padding:7px 15px; text-align: center;
+    cursor:pointer; position: absolute;
+    bottom:0; right:0;
+}
+
+
+.rightZone{
+    width:10%;
+    border-right: 5px solid #D9D9D9;
+    /* border:1px solid black; */
+}
+.rightZone > div{
+    font-size:30px; font-weight:bolder;
+    color:#D9D9D9; text-align: right;
+    padding-right:15px; height:100%;
+}

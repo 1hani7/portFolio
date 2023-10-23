@@ -1,0 +1,47 @@
+.contactWrap{
+    width:100%; height:100vh;
+    display:flex; justify-content: center;
+    align-items: center;
+}
+
+.writeBox{
+    width:50%; height:500px;
+    background: white;
+    border-radius: 20px;
+    display:flex; flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 50px;
+    font-weight:bold;
+}
+
+.writeBox .writeTitle{text-align: center;}
+
+.writeBox div{
+    font-size:20px; color:#393939;
+    width:100%;
+}
+
+.writeBox > div > label{
+    padding-bottom:10px;
+}
+
+.writeBox input{
+    height:30px;
+}
+
+.writeBox input, .writeBox textarea{
+    width:100%; font-size:13px;
+    border-radius: 20px;
+    border: 1px solid #393939;
+    padding-left:15px;
+    resize:none;
+}
+
+.writeBox button{
+    font-size:13px; font-weight:600;
+    color:white; background: var(--bgColor);
+    border-radius: 30px; border: none;
+    padding:8px 30px; text-align: center;
+    cursor:pointer; letter-spacing: 1px;
+}
