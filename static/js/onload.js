@@ -15,12 +15,6 @@ function customCursor(e){
     const semiCursor = document.querySelectorAll(".semiCursor");
     cursor.style.left = e.pageX - 20 + 'px';
     cursor.style.top = e.pageY - 20 + 'px';
-    // semiCursor.forEach(function(item, idx){
-    //     setTimeout(function(){
-    //         item.style.left = e.pageX - 10 + 'px';
-    //         item.style.top = e.pageY - 10 + 'px';
-    //     }, idx * 100);
-    // });
 }
 
 // 마우스 클릭
@@ -37,4 +31,21 @@ function clickAnimation(){
     setTimeout(function(){
         cursor.style.animation = "";
     },500)
+}
+
+// 사이드메뉴 버튼 스크롤
+function btScroll(event){
+    const bCardWrap = document.querySelector('.bCardWrap');
+    const t = event.target.parentNode.textContent;
+    if( t == 'START' ){
+        window.scrollTo({
+            top:0,
+            behavior: 'smooth'
+        })
+    }else if( t == 'INTRODUCE' ){
+        window.scrollTo({
+            top:bCardWrap.offsetTop,
+            behavior: 'smooth'
+        })
+    }
 }

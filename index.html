@@ -62,8 +62,8 @@
         </div>
         <div class="menuBox">
             <div class="menuWrap">
-                <div class="menu">START<div class="menuFill"></div></div>
-                <div class="menu">INTRODUCE<div class="menuFill"></div></div>
+                <div class="menu" onclick="btScroll(event)">START<div class="menuFill"></div></div>
+                <div class="menu" onclick="btScroll(event)">INTRODUCE<div class="menuFill"></div></div>
                 <div class="menu">TECHNIQUE<div class="menuFill"></div></div>
                 <div class="menu">EXPERIENCE<div class="menuFill"></div></div>
                 <div class="menu">CONTACT<div class="menuFill"></div></div>
@@ -118,12 +118,56 @@
                         <img src="./static/image/SSSLogo.svg">
                     </div>
                     <div class="cardBehind">
-                        뒷면이다
+                        <div class="cardLeft">
+                            <img src="" alt="신상수 사진">
+                        </div>
+                        <div class="cardMiddle">
+                            <div class="cardTitle">
+                                JUNIOR FRONTEND<br>
+                                DEVELOPER
+                            </div>
+                            <div class="cardInfo">
+                                <ul>
+                                    <li class="cardName">
+                                        <img src="./static/image/face.svg">
+                                        <span class="cardCategory">NAME</span><span>|</span>
+                                        <p>신상수</p>
+                                    </li>
+                                    <li class="cardBorn">
+                                        <img src="./static/image/bedroom_baby.svg">
+                                        <span class="cardCategory">BORN</span><span>|</span>
+                                        <p>1997.01.14</p>
+                                    </li>
+                                    <li class="cardAddr">
+                                        <img src="./static/image/home.svg">
+                                        <span class="cardCategory">ADDR</span><span>|</span>
+                                        <p>대전광역시 서구</p>
+                                    </li>
+                                    <li class="cardEmail">
+                                        <img src="./static/image/drafts.svg">
+                                        <span class="cardCategory">EMAIL</span><span>|</span>
+                                        <p>1hani7@naver.com</p>
+                                    </li>
+                                    <li class="cardTel">
+                                        <img src="./static/image/call.svg">
+                                        <span class="cardCategory">TEL.P</span><span>|</span>
+                                        <p>010-4378-8589</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cardRight" >
+                            <div class="cardLogo">
+                                <img src="./static/image/SSSLogoForCard.svg">
+                            </div>
+                            <div class="cardQRCode">
+                                <img src="./static/image/qrCode.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <i class="bi bi-chevron-up"></i>
-                    <i class="bi bi-chevron-up"></i>
+                <div class="clickAniWrap">
+                    <i class="bi bi-chevron-double-up"></i>
                     <div>click!</div>
                 </div>
                 <div class="cardFondEffect"></div>
