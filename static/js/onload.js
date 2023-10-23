@@ -5,6 +5,7 @@ window.onload=function(){
     window.addEventListener('scroll', coverScrollOut);
     window.addEventListener('mousemove', customCursor);
     window.addEventListener('mousedown', clickAnimation);
+    window.addEventListener('scroll', businessCardIn);
 }
 
 
