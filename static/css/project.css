@@ -92,6 +92,7 @@
 
 .chapterContents{
     display:flex; flex-direction: column;
+    justify-content: center;
     column-gap: 15px; width:100%; padding-right:20px;
 }
 
@@ -122,31 +123,37 @@
 .ctIcons{
     display:inline-block;
     background: #4B4B4B; border-radius: 30px;
-    padding: 5px 15px;
+    padding: 5px 15px; margin-bottom:5px;
 }
 
 .ctLower button{
     display:inline-block;
     background: white; border-radius: 30px;
-    padding: 5px 15px; border: none;
-    cursor:pointer; z-index:50;
+    padding: 10px 15px; border: none;
+    cursor:pointer; z-index:50; white-space: nowrap;
     font-weight:bolder; color:#393939;
     display:flex; align-items: center;
 }
 .ctLower button:hover{
     background:#393939;
-    border-right:1px solid white;
-    border-bottom:2px solid white;
+    /* border-right:1px solid white;
+    border-bottom:2px solid white; */
     color:white; transition:1s;
 }
 
 .chapterImg{
-    background:white; width:450px; height:100%;
+    background:white; width:700px; height:100%;
     border-radius: 20px; overflow: hidden;
 }
 
 .chapterImg img{
     height:100%;
+    position: relative; left:50%;
+    transform: translate(-50%);
+}
+
+.atmo img{
+    width:100%;
     position: relative; left:50%;
     transform: translate(-50%);
 }
