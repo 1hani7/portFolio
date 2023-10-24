@@ -7,7 +7,7 @@ function bgChange(){
         particleBg.style.opacity = '0';
     }
     else{
-        particleBg.style.transition = '1s';
+        particleBg.style.transition = '2s';
         particleBg.style.opacity = '1';
     }
 }
