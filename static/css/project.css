@@ -1,13 +1,122 @@
 .project{
     position: relative;
     width:100%; height:100vh;
+    overflow:hidden;
+}
+
+.gearRotateBtBox{
+    position:absolute; top:50%; left: 180px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    display:flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+    row-gap:20px; z-index:40;
+}
+.gearRotateBtBox > i{
+    cursor:pointer;
+    color:gray;
+}
+
+
+.spinBox{
+    position:absolute;
+    top:-562.5px; left:-2250px;
+    display: flex; flex-wrap: wrap;
+    width:4500px; height: 2100px;
+    align-items: center; justify-content: space-between;
+    transition: all 2s ease;
+}
+
+.spinContent{
+    /* border: 1px solid black; */
+    width:1500px; height:700px;
+    display:flex; flex-direction: column;
+    justify-content: end;
 }
 
 .gear{
-    position:absolute;
-    left:-50px; top:50%;
-    transform: translateY(-50%);
+    display:flex; align-items: center;
+    justify-content: center;
+    width:300px; height:300px;
 }
-.gear img{
-    
+.spinOne{
+    transform:translate(750px) rotate(45deg);
+}
+.spinTwo{
+    transform:translateY(-250px) rotate(-90deg);
+}
+.spinThree{
+    transform:translate(-750px) rotate(-45deg);
+}
+.spinFour{
+    transform:translate(500px);
+}
+.spinSix{
+    transform:translate(-500px);
+    height:fit-content;
+}
+.spinSeven{
+    transform:translate(750px) rotate(135deg);
+}
+.spinEight{
+    transform:translateY(300px) rotate(90deg);
+    height:fit-content;
+}
+.spinNine{
+    transform:translate(-750px) rotate(45deg);
+}
+
+
+
+.chapterNum{
+    color: #393939; font-weight: bolder;
+    letter-spacing: 5px; font-size: 70px;
+}
+
+.chapterBox{
+    background:#1C1C1C; width:100%; height: 500px;
+    border-radius: 20px; color:white; padding: 25px;
+    display:flex; justify-content: space-between;
+}
+
+.chapterTitleBox{
+    font-size: 30px; font-weight:bolder;
+    display:inline-block; padding-bottom: 15px;
+}
+
+.chapterContents{
+    display:flex; flex-direction: column;
+    column-gap: 15px; width:100%; padding-right:20px;
+}
+
+.ctUpper{height:220px;}
+.ctUpper > div:first-child{
+    font-size: 25px; font-weight:900;
+    padding-bottom:15px; border-bottom:1px solid white;
+}
+.ctUpper > div:last-child{
+    padding:15px 0; overflow: hidden;
+}
+
+.ctLower{
+    border-top:1px solid white;
+    padding-top:15px; display:flex;
+    justify-content: space-between;
+}
+
+.ctIcons{
+    display:inline-block;
+    background: #4B4B4B; border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.ctLower button{
+    display:inline-block;
+    background: white; border-radius: 30px;
+    padding: 5px 15px; border: none;
+}
+
+.chapterImg{
+    background:white; width:450px; height:100%;
+    border-radius: 20px; overflow: hidden;
 }

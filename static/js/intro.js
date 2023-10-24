@@ -34,12 +34,15 @@ function typingAnimation(){
         titleWord.innerHTML += introTitleText.charAt(charIndex);
         charIndex++;
         setTimeout( typingAnimation, typingSpeed );
-        // if( charIndex >= introTitleText.length ){
-        //     setTimeout( function(){
-        //         titleWord.innerHTML = '';
-        //         charIndex = 0;
-        //         typingAnimation();
-        //     }, 3000);
-        // }
+    }
+}
+
+function coverDisplayNone(){
+    const introCoverWrapper = document.querySelector(".introCoverWrapper");
+    const bCardWrap = document.querySelector(".bCardWrap");
+    if( window.scrollY >= bCardWrap.offsetTop ){
+        introCoverWrapper.style.display = 'none';
+    }else{
+        introCoverWrapper.style.display = '';
     }
 }

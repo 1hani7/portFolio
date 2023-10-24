@@ -5,7 +5,8 @@
 }
 
 .writeBox{
-    width:50%; height:500px;
+    z-index:100;
+    width:600px; height:500px;
     background: white;
     border-radius: 20px;
     display:flex; flex-direction: column;
@@ -22,20 +23,21 @@
     width:100%;
 }
 
-.writeBox > div > label{
-    padding-bottom:10px;
-}
-
 .writeBox input{
-    height:30px;
+    height:30px; font-weight:700;
 }
 
 .writeBox input, .writeBox textarea{
+    margin-top:5px;
     width:100%; font-size:13px;
     border-radius: 20px;
     border: 1px solid #393939;
     padding-left:15px;
     resize:none;
+}
+
+.writeBox textarea{
+    padding: 15px;
 }
 
 .writeBox button{

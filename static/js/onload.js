@@ -7,6 +7,10 @@ window.onload=function(){
     window.addEventListener('mousedown', clickAnimation);
     window.addEventListener('scroll', businessCardIn);
     window.addEventListener('scroll', bgChange);
+    window.addEventListener('scroll', coverDisplayNone);
+    window.addEventListener('scroll', expContentShow);
+    beltToRight(); beltToLeft();
+    beltOneMove();
 }
 
 
@@ -39,6 +43,8 @@ function btScroll(event){
     const bCardWrap = document.querySelector('.bCardWrap');
     const cubeWrap = document.querySelector('.cubeWrap');
     const experienceWrap = document.querySelector('.experienceWrap');
+    const project = document.querySelector('.project');
+    const contactWrap = document.querySelector('.contactWrap');
     const t = event.target.parentNode.textContent;
     if( t == 'START' ){
         window.scrollTo({
@@ -58,6 +64,16 @@ function btScroll(event){
     }else if( t == 'EXPERIENCE' ){
         window.scrollTo({
             top:experienceWrap.offsetTop,
+            behavior: 'smooth'
+        })
+    }else if( t == 'PROJECT' ){
+        window.scrollTo({
+            top:project.offsetTop,
+            behavior: 'smooth'
+        })
+    }else if( t == 'CONTACT' ){
+        window.scrollTo({
+            top:contactWrap.offsetTop,
             behavior: 'smooth'
         })
     }

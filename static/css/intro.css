@@ -22,7 +22,7 @@
     width:100%;
     display: flex;
     row-gap:-100px;
-    transform: translateY(100%);
+    transform: translateY(-100%);
     opacity: 0;
 }
 .introLogoWrap img{
