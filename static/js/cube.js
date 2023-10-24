@@ -96,12 +96,7 @@ function cubeToggle( i ){
     isPPT = false;
     isGr = false;
     
-    cubeFace[0].style.transform = 'translateZ(125px)';
-    cubeFace[1].style.transform = 'rotateY(180deg) translateZ(125px)';
-    cubeFace[2].style.transform = 'rotateY(90deg) translateZ(125px)';
-    cubeFace[3].style.transform = 'rotateY(-90deg) translateZ(125px)';
-    cubeFace[4].style.transform = 'rotateX(90deg) translateZ(125px)';
-    cubeFace[5].style.transform = 'rotateX(-90deg) translateZ(125px)';
+    facesInit();
     
     setTimeout(function(){
         contentCube.style.animation = '';

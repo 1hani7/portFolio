@@ -1,7 +1,7 @@
 
 
 window.onload=function(){
-    // openingAnimation();
+    openingAnimation();
     // introEntranceAnimation();
     window.addEventListener('scroll', coverScrollOut);
     window.addEventListener('mousemove', customCursor);
@@ -13,6 +13,7 @@ window.onload=function(){
     beltToRight(); beltToLeft();
     beltOneMove(); beltTwoMove();
     window.addEventListener('scroll', scrollCube);
+    illustFlow();
 }
 
 

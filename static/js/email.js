@@ -16,5 +16,8 @@ function sendMail(){
         console.log(res);
         alert("메일 전송이 완료되었습니다.")
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+        console.log(err);
+        alert("현재 기능 점검 중입니다.")
+    });
 }

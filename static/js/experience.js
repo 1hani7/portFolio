@@ -20,19 +20,34 @@ function expContentShow(){
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if(experienceWrap.offsetTop + 0 <= window.scrollY && 
-        window.scrollY <= project.offsetTop - 500){
+        window.scrollY <= project.offsetTop - 1000){
         scrollCase.style.opacity = '1';
         if( currentScrollTop > lastScrollTop ){
             scrollCase.scrollLeft += 20;
         }else{
             scrollCase.scrollLeft -= 20;
         }
-    }else if(experienceWrap.offsetTop + 300 >= window.scrollY){
+    }else if(experienceWrap.offsetTop >= window.scrollY){
         scrollCase.style.opacity = '0';
         scrollCase.scrollLeft = 0;
-    }else if( project.offsetTop - 300 >= window.scrollY ){
+    }else if( project.offsetTop + project.offsetHeight  >= window.scrollY ){
         scrollCase.style.opacity = '1';
-        scrollCase.scrollLeft = 10000;
+        scrollCase.scrollLeft = scrollCase.scrollWidth;
     }
     lastScrollTop = currentScrollTop;
+}
+
+let illCount = 0;
+function illustFlow(){
+    const illustBox = document.querySelector('.illustBox');
+    const illustSlider = document.querySelector('.illustSlider');
+
+    illCount += 1;
+    if( illCount >= 949 ) illCount = 0;
+
+    illustSlider.style.transform = `translateX(${-illCount}px)`
+
+    setTimeout(function(){
+        illustFlow();
+    },10);
 }

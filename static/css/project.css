@@ -20,6 +20,7 @@
 .bi-caret-down-fill:hover{
     transform:scale(1.2);
     transition: 0.5s;
+    color:black;
 }
 
 
@@ -96,8 +97,17 @@
 
 .ctUpper{height:220px;}
 .ctUpper > div:first-child{
-    font-size: 25px; font-weight:900;
+    font-weight:900;
     padding-bottom:15px; border-bottom:1px solid white;
+}
+.ctUpper > div:last-child{
+    line-height:23px;
+}
+.ctUpper > div:first-child > div:first-child{
+    font-size: 25px; 
+}
+.ctUpper > div:first-child > div:last-child{
+    font-size:20px;
 }
 .ctUpper > div:last-child{
     padding:15px 0; overflow: hidden;
@@ -119,9 +129,24 @@
     display:inline-block;
     background: white; border-radius: 30px;
     padding: 5px 15px; border: none;
+    cursor:pointer; z-index:50;
+    font-weight:bolder; color:#393939;
+    display:flex; align-items: center;
+}
+.ctLower button:hover{
+    background:#393939;
+    border-right:1px solid white;
+    border-bottom:2px solid white;
+    color:white; transition:1s;
 }
 
 .chapterImg{
     background:white; width:450px; height:100%;
     border-radius: 20px; overflow: hidden;
+}
+
+.chapterImg img{
+    height:100%;
+    position: relative; left:50%;
+    transform: translate(-50%);
 }

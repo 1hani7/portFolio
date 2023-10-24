@@ -9,11 +9,9 @@
     0%{
         transform:translateY(0%);
     }
-    99%{
-        transform:translateY(300%); 
-    }
     100%{
-        display: none;
+        transform:translateY(300%);
+        opacity: 0;
     }
 }
 

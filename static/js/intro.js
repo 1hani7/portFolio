@@ -28,7 +28,7 @@ function introEntranceAnimation(){
 let charIndex = 0;
 function typingAnimation(){
     const titleWord = document.querySelector(".titleWord");
-    const introTitleText = `"개발이라는 우주로"`;
+    const introTitleText = `"개발이라는 이름의 넓은 우주로"`;
     const typingSpeed = 100;
     if( charIndex < introTitleText.length ){
         titleWord.innerHTML += introTitleText.charAt(charIndex);
