@@ -1,0 +1,155 @@
+.cubeBg{
+    position:fixed; top:0; left: 0;
+    width:100%; height: 100vh;
+    z-index:-1; perspective: 1000px;
+}
+
+.cubeOne{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+    left: 300px; top:180px;
+    transform: rotateX(20deg);
+}
+
+.cubeOne .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #a7a7a76f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cubeOne .front { transform: translateZ(100px); }
+.cubeOne .back { transform: rotateY(180deg) translateZ(100px); }
+.cubeOne .right { transform: rotateY(90deg) translateZ(100px); }
+.cubeOne .left { transform: rotateY(-90deg) translateZ(100px); }
+.cubeOne .top { transform: rotateX(90deg) translateZ(100px); }
+.cubeOne .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+
+
+
+.cubeTwo{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform-style: preserve-3d;
+    right: 100px; top:30px;
+    transform: rotateX(-20deg) rotateZ(40deg);
+}
+
+.cubeTwo .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #a7a7a76f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cubeTwo .front { transform: translateZ(150px); }
+.cubeTwo .back { transform: rotateY(180deg) translateZ(150px); }
+.cubeTwo .right { transform: rotateY(90deg) translateZ(150px); }
+.cubeTwo .left { transform: rotateY(-90deg) translateZ(150px); }
+.cubeTwo .top { transform: rotateX(90deg) translateZ(150px); }
+.cubeTwo .bottom { transform: rotateX(-90deg) translateZ(150px); }
+
+
+
+.cubeThree{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform-style: preserve-3d;
+    left: 100px; bottom:30px;
+    transform: rotateX(-20deg) rotateY(50deg);
+}
+
+.cubeThree .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #a7a7a76f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cubeThree .front { transform: translateZ(75px); }
+.cubeThree .back { transform: rotateY(180deg) translateZ(75px); }
+.cubeThree .right { transform: rotateY(90deg) translateZ(75px); }
+.cubeThree .left { transform: rotateY(-90deg) translateZ(75px); }
+.cubeThree .top { transform: rotateX(90deg) translateZ(75px); }
+.cubeThree .bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+
+
+.cubeFour{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transform-style: preserve-3d;
+    right: 600px; bottom:300px;
+    transform: rotateX(-20deg) rotateY(50deg);
+}
+
+.cubeFour .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #a7a7a76f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cubeFour .front { transform: translateZ(40px); }
+.cubeFour .back { transform: rotateY(180deg) translateZ(40px); }
+.cubeFour .right { transform: rotateY(90deg) translateZ(40px); }
+.cubeFour .left { transform: rotateY(-90deg) translateZ(40px); }
+.cubeFour .top { transform: rotateX(90deg) translateZ(40px); }
+.cubeFour .bottom { transform: rotateX(-90deg) translateZ(40px); }
+
+
+
+
+.cubeFive{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform-style: preserve-3d;
+    right: 0px; bottom:-300px;
+    transform: rotateZ(120deg) rotateY(100deg);
+}
+
+.cubeFive .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #a7a7a76f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cubeFive .front { transform: translateZ(250px); }
+.cubeFive .back { transform: rotateY(180deg) translateZ(250px); }
+.cubeFive .right { transform: rotateY(90deg) translateZ(250px); }
+.cubeFive .left { transform: rotateY(-90deg) translateZ(250px); }
+.cubeFive .top { transform: rotateX(90deg) translateZ(250px); }
+.cubeFive .bottom { transform: rotateX(-90deg) translateZ(250px); }

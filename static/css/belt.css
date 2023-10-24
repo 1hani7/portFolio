@@ -6,8 +6,5 @@
     font-size:45px; display:flex;
     align-items: center; overflow:hidden;
     white-space: nowrap;
-}
-
-.beltOne{
-    text-align: right;
+    position:relative;
 }

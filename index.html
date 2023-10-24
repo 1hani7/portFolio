@@ -16,6 +16,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/opening.css">
     <link rel="stylesheet" href="./static/css/sideMenu.css">
     <link rel="stylesheet" href="./static/css/introParticle.css">
     <link rel="stylesheet" href="./static/css/intro.css">
@@ -25,9 +26,11 @@
     <link rel="stylesheet" href="./static/css/project.css">
     <link rel="stylesheet" href="./static/css/belt.css">
     <link rel="stylesheet" href="./static/css/contact.css">
+    <link rel="stylesheet" href="./static/css/cubeBg.css">
 
     <!--JavaScript-->
     <script src="./static/js/onload.js"></script>
+    <script src="./static/js/opening.js"></script>
     <script src="./static/js/sideMenu.js"></script>
     <script src="./static/js/intro.js"></script>
     <script src="./static/js/businessCard.js"></script>
@@ -36,13 +39,14 @@
     <script src="./static/js/project.js"></script>
     <script src="./static/js/belt.js"></script>
     <script src="./static/js/contact.js"></script>
+    <script src="./static/js/cubeBg.js"></script>
 
     <!--EmailJS-->
     <script src="./static/js/email.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("service_nkwhz8w");
+            emailjs.init("HaWKn1AzvHlYkAyyj");
         })();
     </script>
 </head>
@@ -53,6 +57,27 @@
         <div class="cursorParticle"></div>
         <div class="cursorParticle"></div>
     </div>
+
+
+    <!--오프닝-->
+    <div class="openingWrap">
+        <div class="loadingWrap">
+            <div>LOADING...</div>
+            <div class="loadingBar">
+                <div class="loadingPercentage"></div>
+            </div>
+        </div>
+        <div class="openingLogoWrap">
+            <div class="openingLogo">
+                <img src="./static/image/SSSLogoForOpening.png">
+            </div>
+            <img class="openingP P1" src="./static/image/openingP1.png">
+            <img class="openingP P2" src="./static/image/openingP2.png">
+            <img class="openingP P3" src="./static/image/openingP3.png">
+            <img class="openingP P4" src="./static/image/openingP4.png">
+        </div>
+    </div>
+
 
     <!--사이드 메뉴-->
     <div class="sideMenu menuOff">
@@ -183,6 +208,11 @@
             <div>
         </section>
         
+        <!--벨트-->
+        <section class="belt">
+            <div class="beltOne"></div>
+        </section>
+
         <!--큐브-->
         <section class="cubeWrap">
             <div class="cubeStage">
@@ -221,6 +251,11 @@
             </div>
         </section>
 
+        <!--벨트-->
+        <section class="belt">
+            <div class="beltTwo"></div>
+        </section>
+
         <!--가로스크롤-->
         <section class="experienceWrap">
             <div class="scrollCase">
@@ -241,7 +276,7 @@
                         <div class="middleZone">
                             <div class="midTitle">"할 수 없는 건 없다."</div>
                             <div class="midInfo">
-                                <div>• 수행 업무 내용</div>
+                                <div>수행 업무 내용</div>
                                 <div>포토샵 / 일러스트레이터 / 인디자인<br>
                                     / 쇼핑몰 관리 / 재고관리 /<br>
                                     택배 운송장 / 입식 지게차 운용 /<br>
@@ -249,11 +284,11 @@
                                 </div>
                             </div>
                             <div class="midInfo">
-                                <div>• 재직 기간</div>
+                                <div>재직 기간</div>
                                 <div>2018.05.31 ~ 2019.06.01</div>
                             </div>
                             <div class="midInfo">
-                                <div>• 해당 경험을 통한 성장</div>
+                                <div>해당 경험을 통한 성장</div>
                                 <div>성장 내용</div>
                             </div>
                             <button>보러 가기<i class="bi bi-chevron-right"></i></button>
@@ -303,7 +338,9 @@
         <section class="project">
             <div class="gearRotateBtBox">
                 <i class="bi bi-caret-up-fill" onclick="projectRotationUnClock(event)"></i>
+                <div class="pondUp"></div>
                 <i class="bi bi-caret-down-fill" onclick="projectRotationClock(event)"></i>
+                <div class="pondDown"></div>
             </div>
             <div class="spinBox">
                 <div class="spinContent spinOne"></div>
@@ -377,34 +414,70 @@
         </section>
 
 
-        <!--벨트-->
-        <section class="belt beltOne">
-            <div class="beltOne"></div>
-        </section>
-        <section class="belt beltTwo">
-            <div class="beltTwo"></div>
-        </section>
-
-
         <!--컨텍트-->
         <section class="contactWrap">
             <div class="writeBox">
                 <div class="writeTitle">Contact.</div>
                 <div class="nameBox">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name"/>
+                    <input type="text" id="name" name="name" required/>
                 </div>
                 <div class="emailBox">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email"/>
+                    <input type="email" id="email" name="email" required/>
                 </div>
                 <div class="detailBox">
                     <label for="detail">Detail</labe>
-                    <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
+                    <textarea name="detail" id="detail" cols="30" rows="10" required></textarea>
                 </div>
-                <button onclick="">SEND</button>
+                <button onclick="sendMail()">SEND</button>
             </div>
         </section>
+
+
+        <!--CubeBG-->
+        <div class="cubeBg">
+            <div class="cubeOne">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cubeTwo">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cubeThree">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cubeFour">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="cubeFive">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
 
         <!--particleBG-->
         <div class="particleBg">

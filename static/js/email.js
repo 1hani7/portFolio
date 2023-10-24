@@ -5,10 +5,10 @@ function sendMail(){
         message: document.getElementById("detail").value
     };
     
-    const serviceId = 'service_e837yyo';
-    const templateId = 'template_qv4s4bs';
+    const serviceID = 'service_e837yyo';
+    const templateID = 'template_hi7gl8k';
     
-    emailjs.send((serviceId, templateId, params))
+    emailjs.send(("service_e837yyo","template_hi7gl8k", params))
     .then((res)=>{
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";

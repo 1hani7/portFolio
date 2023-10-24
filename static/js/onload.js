@@ -1,6 +1,7 @@
 
 
 window.onload=function(){
+    openingAnimation();
     introEntranceAnimation();
     window.addEventListener('scroll', coverScrollOut);
     window.addEventListener('mousemove', customCursor);
@@ -10,7 +11,8 @@ window.onload=function(){
     window.addEventListener('scroll', coverDisplayNone);
     window.addEventListener('scroll', expContentShow);
     beltToRight(); beltToLeft();
-    beltOneMove();
+    beltOneMove(); beltTwoMove();
+    window.addEventListener('scroll', scrollCube);
 }
 
 

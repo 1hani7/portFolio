@@ -1,9 +1,8 @@
 function bgChange(){
-    const html = document.querySelector('html');
     const experienceWrap = document.querySelector('.experienceWrap');
     const contactWrap = document.querySelector('.contactWrap');
     const particleBg = document.querySelector('.particleBg');
-    if(experienceWrap.offsetTop-400 <= window.scrollY &&
+    if(experienceWrap.offsetTop-300 <= window.scrollY &&
          contactWrap.offsetTop-500 > window.scrollY){
         particleBg.style.opacity = '0';
     }
@@ -20,7 +19,7 @@ function expContentShow(){
     const project = document.querySelector(".project");
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if(experienceWrap.offsetTop + 300 <= window.scrollY && 
+    if(experienceWrap.offsetTop + 0 <= window.scrollY && 
         window.scrollY <= project.offsetTop - 500){
         scrollCase.style.opacity = '1';
         if( currentScrollTop > lastScrollTop ){
