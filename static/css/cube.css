@@ -86,7 +86,7 @@
     color: rgb(37, 37, 37);
 }
 
-.cubeFace img {
+.cubeFace > .faceFront > img {
     width: 55%;
     filter: grayscale(100%);
 }
@@ -143,7 +143,7 @@
     display:flex; justify-content: center;
     align-items: center; transform: rotateY(180deg);
     backface-visibility: hidden;
-    background:white;
+    background:white; padding:10px;
 }
 
 
@@ -251,4 +251,100 @@
     100% {
         transform: translate(-50%, -50%) rotateX(-90deg);
     }
+}
+
+
+
+/**큐브 face 뒷면 스타일링*/
+
+.Bar{
+    width:20px; height:100%; background:rgb(213, 213, 213);
+    border-radius: 20px 20px 0px 0px; overflow:hidden;
+    position:relative;
+}
+.Per{
+    position:absolute; bottom:0;
+    width:100%;
+}
+
+/*HTML / CSS / JS*/
+.cubeFront > .faceBack{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: grayscale(0%);
+}
+
+.cubeFace > .faceBack > div{
+    display:flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    row-gap:5px;
+}
+
+.cubeFace > .faceBack > div > img{
+    width:50%;
+}
+
+.htmlPart, .cssPart, .jsPart{
+    width:33.3%; height:100%;
+    display:flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+}
+
+.perName{
+    font-weight:bolder; color:#3c3c3c;
+
+}
+
+.htmlPer{height:95%; background:rgb(255, 69, 69);}
+.cssPer{height:95%; background:rgb(40, 91, 200);}
+.jsPer{height:90%; background:rgb(248, 182, 60);}
+
+
+/**chartJs part*/
+.chartjsPart div:first-child{
+    width:100%; margin-bottom:-20px;
+    display:flex; align-items: center; justify-content: center;
+    column-gap: 10px;
+}
+.doughnutWrap{position:relative; width:50%; height:90px;}
+.doughnutWrap svg{
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+}
+.chartjsPart img{width:90px;}
+.chartjsPart .perName{
+    position:relative; width:100%;
+    text-align: right; padding-right:40px;
+    bottom:42px;
+}
+.chartjsDetail{font-size:13px; line-height:18px;}
+.chartjsPart .chartjsSubDetail{
+    width:100%;
+    font-size:10px; font-weight:bolder; text-align: right;
+}
+
+
+/**Vue part*/
+.dataPart div img{
+    width:80px; height:80px;
+    margin-bottom:20px;
+}
+
+/**grPart*/
+.grpart div{
+    
+}
+.grpart div img{
+    width:50px; height:50px;
+    margin-bottom:20px;
+}
+.grpart div img:nth-child(2){
+    width:55px; height:55px;
+    position: relative; top:2px;
+}
+.grpart div img:last-child{
+    width:63px; height:63px;
+    position: relative; top:1px;
+    margin-left:-6px;
 }
