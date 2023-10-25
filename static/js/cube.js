@@ -5,11 +5,20 @@ let isData = false;
 let isPPT = false;
 let isGr = false;
 
+let isMoving = false;
+
 function cubeRotateButton(event){
+    if( isMoving ) return;
+
     const contentCube = document.querySelector(".contentCube");
     const cubeFace = document.querySelectorAll(".cubeFace");
     const t = event.target.textContent;
     
+    isMoving = true;
+    setTimeout(function(){
+        isMoving = false;
+    }, 1500);
+
     if(t==="HTML/CSS/JS"){
         facesInit()
         contentCube.style.animation = 'HCJBt 1.5s ease forwards';

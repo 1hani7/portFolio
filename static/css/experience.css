@@ -123,10 +123,6 @@
 .leftZone .illustBox img{
     height:100%;
 }
-.leftZone .illustBox img:hover{
-    transition:1s;
-    transform:scale(1.1);
-}
 .leftZone .illustBox div{
     width:100%; height:100%;
     overflow:hidden;

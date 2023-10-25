@@ -1,8 +1,8 @@
 
 
 window.onload=function(){
-    openingAnimation();
-    // introEntranceAnimation();
+    // openingAnimation();
+    introEntranceAnimation();
     window.addEventListener('scroll', coverScrollOut);
     window.addEventListener('mousemove', customCursor);
     window.addEventListener('scroll', customCursor);
