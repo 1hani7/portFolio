@@ -12,34 +12,27 @@ function bgChange(){
     }
 }
 
-let lastScrollTop = 0;
 function expContentShow(){
     const scrollCase = document.querySelector(".scrollCase");
     const experienceWrap = document.querySelector(".experienceWrap");
     const project = document.querySelector(".project");
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    const start = experienceWrap.offsetTop;
+    const scroll = scrollY - start;
 
     if(experienceWrap.offsetTop + 0 <= window.scrollY && 
-        window.scrollY <= project.offsetTop - 1000){
+        window.scrollY <= project.offsetTop - project.offsetHeight){
         scrollCase.style.opacity = '1';
-        if( currentScrollTop > lastScrollTop ){
-            scrollCase.scrollLeft += 20;
-        }else{
-            scrollCase.scrollLeft -= 20;
-        }
+        scrollCase.style.transform = 'translateY(-50%)';
+        scrollCase.scrollLeft = scroll;
     }else if(experienceWrap.offsetTop >= window.scrollY){
         scrollCase.style.opacity = '0';
-        scrollCase.scrollLeft = 0;
-    }else if( project.offsetTop + project.offsetHeight  >= window.scrollY ){
-        scrollCase.style.opacity = '1';
-        scrollCase.scrollLeft = scrollCase.scrollWidth;
+        scrollCase.style.transform = 'translateY(0%)';
     }
-    lastScrollTop = currentScrollTop;
 }
 
 let illCount = 0;
 function illustFlow(){
-    const illustBox = document.querySelector('.illustBox');
     const illustSlider = document.querySelector('.illustSlider');
 
     illCount += 1;
