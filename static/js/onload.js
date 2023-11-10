@@ -21,7 +21,6 @@ window.onload=function(){
 // 마우스 커서
 function customCursor(e){
     const cursor = document.querySelector(".cursor");
-    const semiCursor = document.querySelectorAll(".semiCursor");
     cursor.style.left = e.pageX - 20 + 'px';
     cursor.style.top = e.pageY - 20 + 'px';
 }

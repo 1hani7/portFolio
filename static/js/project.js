@@ -4,7 +4,7 @@ const rotateAmount = 90;
 function projectRotationClock(event){
     const spinBox = document.querySelector('.spinBox');
     const t = event.target;
-    if( rotateState == 0 ) return;
+    if( rotateState == 90 ) return;
     rotateState += rotateAmount;
     console.log(rotateState);
     setTimeout(function(){

@@ -43,7 +43,7 @@ function cubeRotateButton(event){
             return;
         }
         isChart = true;
-    }else if(t==='Vue'){
+    }else if(t==='SPA'){
         facesInit()
         contentCube.style.animation = 'Vue 1.5s ease forwards';
         if( isVue == false ){

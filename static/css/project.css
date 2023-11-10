@@ -49,7 +49,7 @@
     transform:translate(750px) rotate(45deg);
 }
 .spinTwo{
-    transform:translateY(-250px) rotate(-90deg);
+    transform:translate(-100px, -300px) rotate(-90deg);
 }
 .spinThree{
     transform:translate(-750px) rotate(-45deg);

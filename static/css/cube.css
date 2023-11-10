@@ -275,6 +275,10 @@
     filter: grayscale(0%);
 }
 
+.spaImg{
+    width:100%;
+}
+
 .cubeFace > .faceBack > div{
     display:flex; flex-direction: column;
     align-items: center; justify-content: center;
@@ -329,6 +333,10 @@
 .dataPart div img{
     width:80px; height:80px;
     margin-bottom:20px;
+}
+
+.spaImgs{
+    padding-bottom:20px;
 }
 
 /**grPart*/
