@@ -1,5 +1,5 @@
 
-let rotateState = 0;
+let rotateState = 90;
 const rotateAmount = 90;
 function projectRotationClock(event){
     const spinBox = document.querySelector('.spinBox');
