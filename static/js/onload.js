@@ -48,33 +48,39 @@ function btScroll(event){
     const experienceWrap = document.querySelector('.experienceWrap');
     const project = document.querySelector('.project');
     const contactWrap = document.querySelector('.contactWrap');
-    const t = event.target.parentNode.textContent;
-    if( t == 'START' ){
+    const t = event.target.parentNode.id;
+    console.log(t);
+    if( t === 'START' ){
         window.scrollTo({
             top:0,
             behavior: 'smooth'
         })
-    }else if( t == 'INTRODUCE' ){
+    }
+    if( t === 'INTRODUCE' ){
         window.scrollTo({
             top:bCardWrap.offsetTop+500,
             behavior: 'smooth'
         })
-    }else if( t == 'TECHNIQUE' ){
+    }
+    if( t === 'TECHNIQUE' ){
         window.scrollTo({
             top:cubeWrap.offsetTop,
             behavior: 'smooth'
         })
-    }else if( t == 'EXPERIENCE' ){
+    }
+    if( t === 'EXPERIENCE' ){
         window.scrollTo({
             top:experienceWrap.offsetTop,
             behavior: 'smooth'
         })
-    }else if( t == 'PROJECT' ){
+    }
+    if( t === 'PROJECT' ){
         window.scrollTo({
             top:project.offsetTop,
             behavior: 'smooth'
         })
-    }else if( t == 'CONTACT' ){
+    }
+    if( t === 'CONTACT' ){
         window.scrollTo({
             top:contactWrap.offsetTop,
             behavior: 'smooth'
